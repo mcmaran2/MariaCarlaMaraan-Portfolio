@@ -1,12 +1,205 @@
-<section id="certifications">
-    <h2>Certifications & Professional Development</h2>
-    <ul>
-        <li><strong>Google Cybersecurity:</strong> <a href="Google_Cybersecurity_Foundation.pdf" target="_blank">Foundations of Cybersecurity</a></li>
-        <li><strong>English Proficiency:</strong> <a href="EF_SET_C2_Certificate.pdf" target="_blank">EF SET C2 English Certificate</a></li>
-        <li><strong>TESOL:</strong> <a href="TESOL_Certificate.pdf" target="_blank">TESOL Certificate</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Carla Maraan | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --glass: rgba(0, 0, 0, 0.85);
+            --cyan: #00D2FF;
+            --gold: #D4AF37;
+            --purple: #A855F7;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #0f172a;
+            background: url('tech-bg.jpg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 50px 8%; 
+            background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+        }
+
+        /* Doubled the size of the caricature circle from 180px to 360px */
+        .profile-pic {
+            width: 360px; 
+            height: 360px;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin-bottom: 25px;
+            content: url('ai caricature.jpg.jpg');
+            object-fit: cover;
+            box-shadow: 0 0 40px var(--cyan);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin: 0;
+            color: var(--purple);
+            font-weight: 900;
+            text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff;
+        }
+
+        .social-group { display: flex; gap: 15px; margin: 20px 0; }
+        .social-icon {
+            width: 45px; height: 45px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: white; text-decoration: none; font-size: 20px;
+            transition: 0.3s; border: 2px solid white;
+        }
+        .social-icon:hover { transform: scale(1.1); box-shadow: 0 0 15px white; }
+        .fb { background: #1877F2; }
+        .tk { background: #000000; }
+        .ig { background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #bc1888 100%); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .intro-box {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            padding: 35px;
+            border-radius: 25px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            display: flex; flex-wrap: wrap; gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .btn-group { display: flex; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
+        .btn { 
+            padding: 14px 28px; border-radius: 50px; text-decoration: none; 
+            color: white; font-weight: bold; transition: 0.3s; font-size: 14px;
+            text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px;
+        }
+        .btn-contact { background: var(--cyan); }
+        .btn-resume { background: var(--gold); }
+        .btn-vid { background: var(--purple); }
+        .btn-zip { background: white; color: black; border: 2px solid var(--gold); }
+
+        .audio-card {
+            background: rgba(255,255,255,0.05);
+            padding: 15px; border-radius: 15px;
+            border-left: 4px solid var(--cyan); margin-bottom: 15px;
+        }
+        .audio-label { display: block; font-size: 11px; font-weight: bold; color: var(--cyan); margin-bottom: 5px; }
+        audio { width: 100%; height: 35px; filter: invert(100%); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .card h3 { color: var(--cyan); border-bottom: 2px solid var(--cyan); padding-bottom: 10px; margin-top: 0; }
         
-        <li><strong>AI for Everyone:</strong> <a href="AI_Certificate.pdf" target="_blank">AI Education Certificate</a></li>
-        <li><strong>GRC Fundamentals:</strong> <a href="GRC_Fundamentals.pdf" target="_blank">Governance, Risk, and Compliance</a></li>
-        <li><strong>TechReady:</strong> <a href="TechReady_Certificate.pdf" target="_blank">TechReady Graduate Program</a></li>
-    </ul>
-</section>
+        .cert-list { list-style: none; padding: 0; }
+        .cert-item { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 14px; }
+        .cert-link { color: #fff; text-decoration: none; transition: 0.2s; font-weight: 600; display: block; }
+        .cert-link:hover { color: var(--cyan); transform: translateX(8px); }
+
+        @media (max-width: 768px) {
+            header, .intro-box { text-align: center; justify-content: center; }
+            .social-group, .btn-group { justify-content: center; }
+            .profile-pic { width: 250px; height: 250px; } /* Slightly smaller for mobile */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="profile-pic"></div>
+    <h1>Maria Carla Maraan</h1>
+    
+    <div class="social-group">
+        <a href="https://www.facebook.com/mariacarla.maraan/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@mariacarlamaraan" target="_blank" class="social-icon tk"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/mariacarlamaraan/" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="btn-group">
+        <a href="mailto:mc.maraan2@gmail.com" class="btn btn-contact"><i class="fas fa-envelope"></i> Email Me</a>
+        <a href="Maria_Carla_Maraan_Resume.pdf.pdf" class="btn btn-resume" target="_blank"><i class="fas fa-file-pdf"></i> View Full Resume</a>
+        <a href="https://www.veed.io/view/b1b66bd9-0e29-4abf-bac4-4b680124cc13" class="btn btn-vid" target="_blank"><i class="fas fa-play"></i> Intro Video</a>
+        <a href="https://github.com/mcmaran2/MariaCarlaMaraan-Portfolio/archive/refs/heads/main.zip" class="btn btn-zip"><i class="fas fa-file-archive"></i> Download Credentials</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="intro-box">
+        <div style="flex: 2; min-width: 300px;">
+            <h2 style="color: var(--cyan); margin-top: 0;">Certified C2 English & Cybersecurity Professional</h2>
+            <p>15+ years of excellence in client relations (J.P. Morgan Chase & Co.). Specialist in AI Prompt Engineering and GRC Cybersecurity.</p>
+            <p><strong>Available for:</strong> Remote | Part-Time | Day-Shift (AU Timezone)</p>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+            <div class="audio-card">
+                <span class="audio-label">🎙️ Voice Introduction</span>
+                <audio controls><source src="SELF INTRO -voice rec.mp3.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card" style="border-left-color: var(--purple);">
+                <span class="audio-label" style="color: var(--purple);">🎵 Suno AI Theme Song</span>
+                <a href="https://suno.com/s/2GjjLsQ7oQfGYtoD" target="_blank" style="color: white; text-decoration: none; font-size: 13px; font-weight: bold;">▶ Listen: Securing The Future</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>English & Education</h3>
+            <ul class="cert-list">
+                <li class="cert-item">🏆 <a href="EF SET Certificate ENGLISH LEVEL C2 (1).pdf" class="cert-link" target="_blank">C2 English Mastery Cert</a></li>
+                <li class="cert-item">📜 <a href="TESOL_Certificate.pdf.pdf" class="cert-link" target="_blank">TESOL Professional Cert</a></li>
+                <li class="cert-item">🎓 <span class="cert-link">BS Business Admin (CEU)</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Cybersecurity & GRC</h3>
+            <ul class="cert-list">
+                <li class="cert-item">🛡️ <a href="Coursera Foundation of CyberSecurity google cert.pdf" class="cert-link" target="_blank">Google Cybersecurity</a></li>
+                <li class="cert-item">⚖️ <a href="coursera GRC CYBERSEC cert.pdf.PNG" class="cert-link" target="_blank">GRC Specialization</a></li>
+                <li class="cert-item">📋 <a href="Coursera FDAIKBE33BQQ NIST.pdf" class="cert-link" target="_blank">NIST Framework Cert</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>AI & Prompting</h3>
+            <ul class="cert-list">
+                <li class="cert-item">🤖 <a href="AI_Prompt_Engineering.png.pdf" class="cert-link" target="_blank">Prompt Engineering Proof</a></li>
+                <li class="cert-item">💡 <a href="IBM_Ethical Considerations for Generative AI.pdf.png" class="cert-link" target="_blank">IBM Ethical AI Cert</a></li>
+            </ul>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--gold);">
+            <h3 style="color: var(--gold); border-bottom-color: var(--gold);">WFH Reliability Specs</h3>
+            <ul class="cert-list" style="font-size: 13px;">
+                <li class="cert-item">💻 <strong>Primary:</strong> Ryzen 7 5700U | 16GB RAM</li>
+                <li class="cert-item">💻 <strong>Secondary:</strong> Intel i5-7400 | 12GB RAM</li>
+                <li class="cert-item">🌐 <strong>Net:</strong> 300Mbps PLDT Fiber (Hardwired)</li>
+                <li class="cert-item">🔋 <strong>Power:</strong> UPS + 2-Stroke Generator</li>
+                <li class="cert-item">🎧 <strong>Audio:</strong> Jabra Evolve 20 Noise-Canceling</li>
+                <li class="cert-item">🏢 <strong>Office:</strong> Soundproof Private Room</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top: 40px; border: 2px solid var(--purple); background: rgba(168, 85, 247, 0.1);">
+        <h3 style="color: var(--purple); border-bottom-color: var(--purple);">🚀 Portfolio Showcase: Practice & Creations</h3>
+        <p style="font-size: 14px;">Explore my live gallery of project documentation, including AI Prompt Engineering logs and technical guidelines.</p>
+        <div class="btn-group">
+            <a href="https://drive.google.com/drive/folders/1ZdPdU9hDzEy6hFMU_1800OooFCvv5Lwx?usp=sharing" class="btn" style="background: var(--purple);" target="_blank">
+                <i class="fab fa-google-drive"></i> View Maria_Carla_Maraan_Projects
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 50px; opacity: 0.5; font-size: 11px;">
+    &copy; 2026 Maria Carla Maraan | Skype: live.mc.maraan
+</footer>
+
+</body>
+</html>
