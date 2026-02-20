@@ -17,6 +17,7 @@
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
             background: #0f172a;
+            /* Using your uploaded tech background */
             background: url('tech-bg.jpg.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
@@ -24,20 +25,20 @@
         }
 
         header {
-            padding: 50px 8%; 
+            padding: 60px 8%; 
             background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
         }
 
-        /* Doubled the size of the caricature circle from 180px to 360px */
+        /* Doubled Caricature Size to 360px */
         .profile-pic {
             width: 360px; 
             height: 360px;
             border-radius: 50%;
             border: 6px solid white;
             margin-bottom: 25px;
-            content: url('ai caricature.jpg.jpg');
+            content: url('ai caricature.jpg'); 
             object-fit: cover;
-            box-shadow: 0 0 40px var(--cyan);
+            box-shadow: 0 0 50px var(--cyan);
         }
 
         h1 {
@@ -81,7 +82,6 @@
         .btn-contact { background: var(--cyan); }
         .btn-resume { background: var(--gold); }
         .btn-vid { background: var(--purple); }
-        .btn-zip { background: white; color: black; border: 2px solid var(--gold); }
 
         .audio-card {
             background: rgba(255,255,255,0.05);
@@ -103,7 +103,7 @@
         @media (max-width: 768px) {
             header, .intro-box { text-align: center; justify-content: center; }
             .social-group, .btn-group { justify-content: center; }
-            .profile-pic { width: 250px; height: 250px; } /* Slightly smaller for mobile */
+            .profile-pic { width: 280px; height: 280px; }
         }
     </style>
 </head>
@@ -121,9 +121,8 @@
 
     <div class="btn-group">
         <a href="mailto:mc.maraan2@gmail.com" class="btn btn-contact"><i class="fas fa-envelope"></i> Email Me</a>
-        <a href="Maria_Carla_Maraan_Resume.pdf.pdf" class="btn btn-resume" target="_blank"><i class="fas fa-file-pdf"></i> View Full Resume</a>
+        <a href="Maria_Carla_Maraan_Resume.pdf.pdf" class="btn btn-resume" target="_blank"><i class="fas fa-file-pdf"></i> View Resume</a>
         <a href="https://www.veed.io/view/b1b66bd9-0e29-4abf-bac4-4b680124cc13" class="btn btn-vid" target="_blank"><i class="fas fa-play"></i> Intro Video</a>
-        <a href="https://github.com/mcmaran2/MariaCarlaMaraan-Portfolio/archive/refs/heads/main.zip" class="btn btn-zip"><i class="fas fa-file-archive"></i> Download Credentials</a>
     </div>
 </header>
 
@@ -150,4 +149,53 @@
         <div class="card">
             <h3>English & Education</h3>
             <ul class="cert-list">
-                <li class="cert-item">🏆 <a href="EF SET
+                <li class="cert-item">🏆 <a href="EF SET Certificate ENGLISH LEVEL C2 (1).pdf" class="cert-link" target="_blank">C2 English Mastery Cert</a></li>
+                <li class="cert-item">📜 <a href="TESOL_Certificate.pdf.pdf" class="cert-link" target="_blank">TESOL Professional Cert</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Cybersecurity & GRC</h3>
+            <ul class="cert-list">
+                <li class="cert-item">🛡️ <a href="Coursera Foundation of Cybersecurity google cert.pdf" class="cert-link" target="_blank">Google Cybersecurity</a></li>
+                <li class="cert-item">⚖️ <a href="coursera GRC CYBERSEC cert.pdf.PNG" class="cert-link" target="_blank">GRC Specialization</a></li>
+                <li class="cert-item">📋 <a href="Coursera FDAIKBE33BQQ NIST.pdf" class="cert-link" target="_blank">NIST Framework Cert</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>AI & Prompting</h3>
+            <ul class="cert-list">
+                <li class="cert-item">🤖 <a href="AI_Prompt_Engineering.png.pdf" class="cert-link" target="_blank">Prompt Engineering Cert</a></li>
+                <li class="cert-item">💡 <a href="IBM_Ethical Considerations for Generative AI.pdf.png" class="cert-link" target="_blank">IBM Ethical AI Cert</a></li>
+            </ul>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--gold);">
+            <h3 style="color: var(--gold); border-bottom-color: var(--gold);">WFH Reliability Specs</h3>
+            <ul class="cert-list" style="font-size: 13px;">
+                <li class="cert-item">💻 <strong>Primary:</strong> Ryzen 7 5700U | 16GB RAM</li>
+                <li class="cert-item">🌐 <strong>Net:</strong> 300Mbps PLDT Fiber</li>
+                <li class="cert-item">🔋 <strong>Power:</strong> UPS + 2-Stroke Generator</li>
+                <li class="cert-item">🎧 <strong>Audio:</strong> Jabra Evolve 20 Noise-Canceling</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top: 40px; border: 2px solid var(--purple); background: rgba(168, 85, 247, 0.1);">
+        <h3 style="color: var(--purple); border-bottom-color: var(--purple);">🚀 Portfolio Showcase: Practice & Creations</h3>
+        <p style="font-size: 14px;">Explore my live gallery of project documentation, AI creations, and technical guidelines.</p>
+        <div class="btn-group">
+            <a href="https://drive.google.com/drive/folders/1ZdPdU9hDzEy6hFMU_1800OooFCvv5Lwx?usp=sharing" class="btn" style="background: var(--purple);" target="_blank">
+                <i class="fab fa-google-drive"></i> View My Project Gallery
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 50px; opacity: 0.5; font-size: 11px;">
+    &copy; 2026 Maria Carla Maraan | Skype: live.mc.maraan
+</footer>
+
+</body>
+</html>
