@@ -47,16 +47,20 @@
             text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
         }
 
+        /* Restored Social Icon Styles */
         .social-group { display: flex; gap: 15px; margin: 20px 0; }
         .social-icon {
-            width: 40px; height: 40px; border-radius: 50%;
+            width: 45px; height: 45px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            color: white; text-decoration: none; border: 2px solid white; transition: 0.3s;
+            color: white; text-decoration: none; font-size: 20px;
+            transition: 0.3s; border: 2px solid white;
         }
-        .social-icon:hover { transform: scale(1.1); background: white; color: black; }
+        .social-icon:hover { transform: scale(1.2); box-shadow: 0 0 15px white; }
+        .fb { background: #1877F2; }
+        .tk { background: #000000; }
+        .ig { background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #bc1888 100%); }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-
         .intro-box {
             background: var(--glass);
             backdrop-filter: blur(10px);
@@ -91,11 +95,13 @@
 <header>
     <div class="profile-pic"></div>
     <h1>Maria Carla Maraan</h1>
+    
     <div class="social-group">
-        <a href="https://www.facebook.com/mariacarla.maraan/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.tiktok.com/@mariacarlamaraan" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.instagram.com/mariacarlamaraan/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/mariacarla.maraan/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@mariacarlamaraan" target="_blank" class="social-icon tk"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/mariacarlamaraan/" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
     </div>
+
     <div class="btn-group">
         <a href="mailto:mc.maraan2@gmail.com" class="btn btn-contact">Email Me</a>
         <a href="Maria Carla Maraan resume Feb 2026.pptx (1).pdf" class="btn btn-resume" target="_blank">View Resume</a>
@@ -115,7 +121,7 @@
         <div class="card">
             <h3>Education & Language</h3>
             <a href="EF SET Certificate ENGLISH LEVEL C2 (1).pdf" class="doc-link" target="_blank">📄 C2 English Proficiency Cert</a>
-            <a href="TESOL_Certificate.pdf" class="doc-link" target="_blank">📄 TESOL Certified</a>
+            <span class="doc-link">📄 TESOL Certified Professional</span>
         </div>
         
         <div class="card">
