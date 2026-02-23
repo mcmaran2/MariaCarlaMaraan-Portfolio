@@ -11,6 +11,7 @@
             --cyan: #00D2FF;
             --gold: #D4AF37;
             --purple: #A855F7;
+            --messenger: #0084FF;
         }
 
         body {
@@ -28,7 +29,6 @@
             background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
         }
 
-        /* Doubled the size of the caricature circle from 180px to 360px */
         .profile-pic {
             width: 360px; 
             height: 360px;
@@ -79,9 +79,12 @@
             text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px;
         }
         .btn-contact { background: var(--cyan); }
+        .btn-messenger { background: var(--messenger); }
         .btn-resume { background: var(--gold); }
         .btn-vid { background: var(--purple); }
         .btn-zip { background: white; color: black; border: 2px solid var(--gold); }
+        
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); opacity: 0.9; }
 
         .audio-card {
             background: rgba(255,255,255,0.05);
@@ -103,7 +106,7 @@
         @media (max-width: 768px) {
             header, .intro-box { text-align: center; justify-content: center; }
             .social-group, .btn-group { justify-content: center; }
-            .profile-pic { width: 250px; height: 250px; } /* Slightly smaller for mobile */
+            .profile-pic { width: 250px; height: 250px; } 
         }
     </style>
 </head>
@@ -121,6 +124,7 @@
 
     <div class="btn-group">
         <a href="mailto:mc.maraan2@gmail.com" class="btn btn-contact"><i class="fas fa-envelope"></i> Email Me</a>
+        <a href="https://m.me/mariacarla.maraan" class="btn btn-messenger" target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a>
         <a href="Maria_Carla_Maraan_Resume.pdf" class="btn btn-resume" target="_blank"><i class="fas fa-file-pdf"></i> View Full Resume</a>
         <a href="https://www.veed.io/view/b1b66bd9-0e29-4abf-bac4-4b680124cc13" class="btn btn-vid" target="_blank"><i class="fas fa-play"></i> Intro Video</a>
         <a href="https://github.com/mcmaran2/MariaCarlaMaraan-Portfolio/archive/refs/heads/main.zip" class="btn btn-zip"><i class="fas fa-file-archive"></i> Download Credentials</a>
